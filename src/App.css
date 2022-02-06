@@ -1,38 +1,251 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+.filter_product{
+  width:14rem;
+  height: 35%;
+  background-color: black;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  border-radius: 10%;
+  color: wheat;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+@media (max-width:650px) {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .filter_product{
+  width:8rem;
+  margin-left: 20px;
+  }
+  .products_item{
+    width:100%;
+    margin-left:0px;
+    
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filter_product h1{
+ color: rgb(90, 86, 82);
+ font-size:1em;
+ margin-left: 2rem;
+ padding-top: 2rem;
+}
+.filter_product hr{
+  margin-top: 0.3rem;
+  width: 80%;
+  margin-left: 6%;
+}
+.filt{
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.info{
+  width: 70%;
+  height: 4vh;
+  margin-top: 0.6rem;
+  border-radius: 5px;
+  background-color: rgb(102, 97, 97);
+  color:white;
+}
+.App{
+  display: flex;
+  background-color: rgb(39, 37, 32);
+  height: 100vh;
+  width: 100%;
+}
+.products_item{
+  width:80%;
+  margin-left: 2rem;
+  
+}
+
+.heading h1{
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 3.5rem;
+}
+.heading h2{
+  color: gray;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+.product_name{
+  width:100%;
+}
+.product_name h3{
+  color: aliceblue;
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+}
+.product_name hr{
+  width: 110%;
+  margin-top: 1rem;
+
+
+}
+
+.items{
+ /* background-color:black; */
+ width:71rem;
+ min-height: 30vh;
+ border: 1px solid gray;
+ display: flex;
+overflow-x: auto;
+margin-top: 2.2%;
+border-radius: 2rem;
+
+}
+
+.items::-webkit-scrollbar{
+  width: 0%;
+  display: none;
+}
+.aam{
+  /* background-color:red; */
+  width: 100%;
+}
+.body{
+  width: 65rem;
+  background-color:rgb(58, 56, 56);
+}
+
+.single_product{
+  width: 250px;
+  /* background-color: aqua; */
+  height: 30vh;
+  margin-right:20%;
+  font-size: 3px;
+  border: 10px solid black;
+}
+#im img{
+  width: 70px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+.itemproduct{
+  display: flex;
+}
+.pbp{
+  margin-top: 8px;
+  margin-left: 12px;
   color: white;
 }
+.pbp p{
+font-size: 15px;
+}
+.pbp h1{
+  font-size: 13px;
+  color: gray;
+  margin-top: 5px;
 
-.App-link {
-  color: #61dafb;
+}
+.pbp h3{
+ font-size: 18px;
+ color: white;
+}
+.ppp{
+  color:gray;
+  /* display: flex; */
+  font-size: 10px;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pp{
+  display: flex;
+  margin-left: 20px;
+  font-size: 15px;
+  color: rgb(161, 160, 160);
+}
+.pp p{
+  margin-right: 20px;
+  margin-top: 20px;
+}
+#desc{
+font-size: 14px;
+color:rgb(161, 160, 160);
+margin-top: 20px;
+margin-left: 8px;
+}
+
+@media (max-width:650px) {
+  .body{
+    width: 85rem;
   }
-  to {
-    transform: rotate(360deg);
+  .single_product{
+    width: 180px;
+    height: 30vh;
+    font-size: 3px;
   }
+  #im img{
+    width: 70px;
+    margin-left:3px;
+    margin-top: 3px;
+    border-radius: 20px;
+  }
+  .itemproduct{
+    display: flex;
+  }
+  .pbp{
+    margin-top: 8px;
+    margin-left: 12px;
+    color: white;
+  }
+  .pbp p{
+  font-size: 15px;
+  }
+  .pbp h1{
+    font-size: 13px;
+    color: gray;
+    margin-top: 5px;
+  
+  }
+  .pbp h3{
+   font-size: 15px;
+   color: white;
+  }
+  .ppp{
+    color:gray;
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  
+  .pp{
+    display: flex;
+    margin-left: 10px;
+    font-size:10px;
+    color: rgb(161, 160, 160);
+  }
+  .pp p{
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  #desc{
+  font-size: 10px;
+  margin-top:1px;
+  margin-left: 5px;
+  }
+  .items{
+    /* background-color:black; */
+    width:18rem;
+    min-height: 30vh;
+    border: 1px solid gray;
+    display: flex;
+   overflow-x: auto;
+   margin-top: 2.2%;
+   border-radius: 2rem;
+   
+   }
+   .product_name hr{
+    width:100%;
+    margin-top: 1rem;
+  
+  
+  }
+
+
+
 }
